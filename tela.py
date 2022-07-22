@@ -25,13 +25,6 @@ def tentativa(list):
   for j in tabuleiroPrincipal:
     print(j)
 
-
-  op1=input("Digite a opção 1:")
-  p2=input("Digite a opção 2:")
-
-#   tentativa(list)
-# Visualizar()
-
 janela = Tk()
 janela.geometry("400x400")
 janela.minsize(400, 400) 
@@ -45,4 +38,5 @@ texto_resposta.grid(column=0, row=1, padx=10, pady=10)
 
 botao = Button(janela, text="Clique aqui para iniciar o jogo")
 botao.grid(column=0, row=2, padx=10, pady=10)
+botao.pack (side=BOTTOM)
 janela.mainloop()
